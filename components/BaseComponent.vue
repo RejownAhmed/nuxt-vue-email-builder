@@ -6,6 +6,7 @@ const props = defineProps({
   },
 });
 
+// Dynamic Import (Import components on demand, so that all components do not load at once)
 const components = {
   OneProduct: defineAsyncComponent(()=> import("./templates/OneProduct.vue"))
 }
